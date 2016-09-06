@@ -1,0 +1,803 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		76F7338B1D7D0BDE00E156E3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 76F7338A1D7D0BDE00E156E3 /* main.m */; };
+		76F7338E1D7D0BDE00E156E3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 76F7338D1D7D0BDE00E156E3 /* AppDelegate.m */; };
+		76F733911D7D0BDE00E156E3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76F733901D7D0BDE00E156E3 /* ViewController.m */; };
+		76F733941D7D0BDE00E156E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76F733921D7D0BDE00E156E3 /* Main.storyboard */; };
+		76F733961D7D0BDE00E156E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76F733951D7D0BDE00E156E3 /* Assets.xcassets */; };
+		76F733991D7D0BDE00E156E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76F733971D7D0BDE00E156E3 /* LaunchScreen.storyboard */; };
+		76F733A41D7D0BDE00E156E3 /* WPCodeScaningTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 76F733A31D7D0BDE00E156E3 /* WPCodeScaningTests.m */; };
+		76F733AF1D7D0BDE00E156E3 /* WPCodeScaningUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 76F733AE1D7D0BDE00E156E3 /* WPCodeScaningUITests.m */; };
+		76F734011D7D0C6200E156E3 /* bitstream.c in Sources */ = {isa = PBXBuildFile; fileRef = 76F733DC1D7D0C6200E156E3 /* bitstream.c */; };
+		76F734021D7D0C6200E156E3 /* mask.c in Sources */ = {isa = PBXBuildFile; fileRef = 76F733DE1D7D0C6200E156E3 /* mask.c */; };
+		76F734031D7D0C6200E156E3 /* QRCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 76F733E11D7D0C6200E156E3 /* QRCodeGenerator.m */; };
+		76F734041D7D0C6200E156E3 /* qrencode.c in Sources */ = {isa = PBXBuildFile; fileRef = 76F733E21D7D0C6200E156E3 /* qrencode.c */; };
+		76F734051D7D0C6200E156E3 /* qrinput.c in Sources */ = {isa = PBXBuildFile; fileRef = 76F733E41D7D0C6200E156E3 /* qrinput.c */; };
+		76F734061D7D0C6200E156E3 /* qrspec.c in Sources */ = {isa = PBXBuildFile; fileRef = 76F733E61D7D0C6200E156E3 /* qrspec.c */; };
+		76F734071D7D0C6200E156E3 /* rscode.c in Sources */ = {isa = PBXBuildFile; fileRef = 76F733E81D7D0C6200E156E3 /* rscode.c */; };
+		76F734081D7D0C6200E156E3 /* split.c in Sources */ = {isa = PBXBuildFile; fileRef = 76F733EA1D7D0C6200E156E3 /* split.c */; };
+		76F734091D7D0C6200E156E3 /* libzbar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 76F733EC1D7D0C6200E156E3 /* libzbar.a */; };
+		76F7340A1D7D0C6200E156E3 /* zbar-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 76F733EE1D7D0C6200E156E3 /* zbar-back.png */; };
+		76F7340B1D7D0C6200E156E3 /* zbar-help.html in Resources */ = {isa = PBXBuildFile; fileRef = 76F733EF1D7D0C6200E156E3 /* zbar-help.html */; };
+		76F7340C1D7D0C6200E156E3 /* zbar-helpicons.png in Resources */ = {isa = PBXBuildFile; fileRef = 76F733F01D7D0C6200E156E3 /* zbar-helpicons.png */; };
+		76F7340D1D7D0C6200E156E3 /* zbar-samples.png in Resources */ = {isa = PBXBuildFile; fileRef = 76F733F11D7D0C6200E156E3 /* zbar-samples.png */; };
+		76F7340E1D7D0C6200E156E3 /* qrcode_scan_btn_flash_down@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 76F733F31D7D0C6200E156E3 /* qrcode_scan_btn_flash_down@2x.png */; };
+		76F7340F1D7D0C6200E156E3 /* qrcode_scan_btn_flash_nor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 76F733F41D7D0C6200E156E3 /* qrcode_scan_btn_flash_nor@2x.png */; };
+		76F734101D7D0C6200E156E3 /* qrcode_scan_btn_photo_down@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 76F733F51D7D0C6200E156E3 /* qrcode_scan_btn_photo_down@2x.png */; };
+		76F734111D7D0C6200E156E3 /* qrcode_scan_btn_photo_nor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 76F733F61D7D0C6200E156E3 /* qrcode_scan_btn_photo_nor@2x.png */; };
+		76F734121D7D0C6200E156E3 /* qrcode_scan_btn_scan_off@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 76F733F71D7D0C6200E156E3 /* qrcode_scan_btn_scan_off@2x.png */; };
+		76F734131D7D0C6200E156E3 /* WPZBarViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 76F734001D7D0C6200E156E3 /* WPZBarViewController.mm */; };
+		76F734151D7D0D1500E156E3 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 76F734141D7D0D1500E156E3 /* libiconv.tbd */; };
+		76F734171D7D0D2400E156E3 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76F734161D7D0D2400E156E3 /* CoreVideo.framework */; };
+		76F734191D7D0D3200E156E3 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76F734181D7D0D3200E156E3 /* CoreMedia.framework */; };
+		76F7341B1D7D0D3800E156E3 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76F7341A1D7D0D3800E156E3 /* AVFoundation.framework */; };
+		76F7341D1D7E5B6800E156E3 /* scan_net@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 76F7341C1D7E5B6800E156E3 /* scan_net@2x.png */; };
+		76F7341F1D7E674800E156E3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76F7341E1D7E674800E156E3 /* QuartzCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		76F733A01D7D0BDE00E156E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 76F7337E1D7D0BDE00E156E3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 76F733851D7D0BDE00E156E3;
+			remoteInfo = WPCodeScaning;
+		};
+		76F733AB1D7D0BDE00E156E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 76F7337E1D7D0BDE00E156E3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 76F733851D7D0BDE00E156E3;
+			remoteInfo = WPCodeScaning;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		76F733861D7D0BDE00E156E3 /* WPCodeScaning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WPCodeScaning.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		76F7338A1D7D0BDE00E156E3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		76F7338C1D7D0BDE00E156E3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		76F7338D1D7D0BDE00E156E3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		76F7338F1D7D0BDE00E156E3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		76F733901D7D0BDE00E156E3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		76F733931D7D0BDE00E156E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		76F733951D7D0BDE00E156E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		76F733981D7D0BDE00E156E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		76F7339A1D7D0BDE00E156E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76F7339F1D7D0BDE00E156E3 /* WPCodeScaningTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WPCodeScaningTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		76F733A31D7D0BDE00E156E3 /* WPCodeScaningTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WPCodeScaningTests.m; sourceTree = "<group>"; };
+		76F733A51D7D0BDE00E156E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76F733AA1D7D0BDE00E156E3 /* WPCodeScaningUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WPCodeScaningUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		76F733AE1D7D0BDE00E156E3 /* WPCodeScaningUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WPCodeScaningUITests.m; sourceTree = "<group>"; };
+		76F733B01D7D0BDE00E156E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76F733C71D7D0C6200E156E3 /* Decoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Decoder.h; sourceTree = "<group>"; };
+		76F733C81D7D0C6200E156E3 /* Exception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Exception.h; sourceTree = "<group>"; };
+		76F733C91D7D0C6200E156E3 /* Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Image.h; sourceTree = "<group>"; };
+		76F733CA1D7D0C6200E156E3 /* ImageScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageScanner.h; sourceTree = "<group>"; };
+		76F733CB1D7D0C6200E156E3 /* Processor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Processor.h; sourceTree = "<group>"; };
+		76F733CC1D7D0C6200E156E3 /* Scanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scanner.h; sourceTree = "<group>"; };
+		76F733CD1D7D0C6200E156E3 /* Symbol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Symbol.h; sourceTree = "<group>"; };
+		76F733CE1D7D0C6200E156E3 /* Video.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Video.h; sourceTree = "<group>"; };
+		76F733CF1D7D0C6200E156E3 /* Window.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Window.h; sourceTree = "<group>"; };
+		76F733D01D7D0C6200E156E3 /* zbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zbar.h; sourceTree = "<group>"; };
+		76F733D11D7D0C6200E156E3 /* ZBarCameraSimulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarCameraSimulator.h; sourceTree = "<group>"; };
+		76F733D21D7D0C6200E156E3 /* ZBarCaptureReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarCaptureReader.h; sourceTree = "<group>"; };
+		76F733D31D7D0C6200E156E3 /* ZBarHelpController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarHelpController.h; sourceTree = "<group>"; };
+		76F733D41D7D0C6200E156E3 /* ZBarImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarImage.h; sourceTree = "<group>"; };
+		76F733D51D7D0C6200E156E3 /* ZBarImageScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarImageScanner.h; sourceTree = "<group>"; };
+		76F733D61D7D0C6200E156E3 /* ZBarReaderController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarReaderController.h; sourceTree = "<group>"; };
+		76F733D71D7D0C6200E156E3 /* ZBarReaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarReaderView.h; sourceTree = "<group>"; };
+		76F733D81D7D0C6200E156E3 /* ZBarReaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarReaderViewController.h; sourceTree = "<group>"; };
+		76F733D91D7D0C6200E156E3 /* ZBarSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarSDK.h; sourceTree = "<group>"; };
+		76F733DA1D7D0C6200E156E3 /* ZBarSymbol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarSymbol.h; sourceTree = "<group>"; };
+		76F733DC1D7D0C6200E156E3 /* bitstream.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bitstream.c; sourceTree = "<group>"; };
+		76F733DD1D7D0C6200E156E3 /* bitstream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bitstream.h; sourceTree = "<group>"; };
+		76F733DE1D7D0C6200E156E3 /* mask.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mask.c; sourceTree = "<group>"; };
+		76F733DF1D7D0C6200E156E3 /* mask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mask.h; sourceTree = "<group>"; };
+		76F733E01D7D0C6200E156E3 /* QRCodeGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeGenerator.h; sourceTree = "<group>"; };
+		76F733E11D7D0C6200E156E3 /* QRCodeGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeGenerator.m; sourceTree = "<group>"; };
+		76F733E21D7D0C6200E156E3 /* qrencode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qrencode.c; sourceTree = "<group>"; };
+		76F733E31D7D0C6200E156E3 /* qrencode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qrencode.h; sourceTree = "<group>"; };
+		76F733E41D7D0C6200E156E3 /* qrinput.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qrinput.c; sourceTree = "<group>"; };
+		76F733E51D7D0C6200E156E3 /* qrinput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qrinput.h; sourceTree = "<group>"; };
+		76F733E61D7D0C6200E156E3 /* qrspec.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qrspec.c; sourceTree = "<group>"; };
+		76F733E71D7D0C6200E156E3 /* qrspec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qrspec.h; sourceTree = "<group>"; };
+		76F733E81D7D0C6200E156E3 /* rscode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rscode.c; sourceTree = "<group>"; };
+		76F733E91D7D0C6200E156E3 /* rscode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rscode.h; sourceTree = "<group>"; };
+		76F733EA1D7D0C6200E156E3 /* split.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = split.c; sourceTree = "<group>"; };
+		76F733EB1D7D0C6200E156E3 /* split.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = split.h; sourceTree = "<group>"; };
+		76F733EC1D7D0C6200E156E3 /* libzbar.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libzbar.a; sourceTree = "<group>"; };
+		76F733EE1D7D0C6200E156E3 /* zbar-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zbar-back.png"; sourceTree = "<group>"; };
+		76F733EF1D7D0C6200E156E3 /* zbar-help.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "zbar-help.html"; sourceTree = "<group>"; };
+		76F733F01D7D0C6200E156E3 /* zbar-helpicons.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zbar-helpicons.png"; sourceTree = "<group>"; };
+		76F733F11D7D0C6200E156E3 /* zbar-samples.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zbar-samples.png"; sourceTree = "<group>"; };
+		76F733F31D7D0C6200E156E3 /* qrcode_scan_btn_flash_down@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qrcode_scan_btn_flash_down@2x.png"; sourceTree = "<group>"; };
+		76F733F41D7D0C6200E156E3 /* qrcode_scan_btn_flash_nor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qrcode_scan_btn_flash_nor@2x.png"; sourceTree = "<group>"; };
+		76F733F51D7D0C6200E156E3 /* qrcode_scan_btn_photo_down@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qrcode_scan_btn_photo_down@2x.png"; sourceTree = "<group>"; };
+		76F733F61D7D0C6200E156E3 /* qrcode_scan_btn_photo_nor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qrcode_scan_btn_photo_nor@2x.png"; sourceTree = "<group>"; };
+		76F733F71D7D0C6200E156E3 /* qrcode_scan_btn_scan_off@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qrcode_scan_btn_scan_off@2x.png"; sourceTree = "<group>"; };
+		76F733FF1D7D0C6200E156E3 /* WPZBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPZBarViewController.h; sourceTree = "<group>"; };
+		76F734001D7D0C6200E156E3 /* WPZBarViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = WPZBarViewController.mm; sourceTree = "<group>"; };
+		76F734141D7D0D1500E156E3 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		76F734161D7D0D2400E156E3 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		76F734181D7D0D3200E156E3 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		76F7341A1D7D0D3800E156E3 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		76F7341C1D7E5B6800E156E3 /* scan_net@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scan_net@2x.png"; sourceTree = "<group>"; };
+		76F7341E1D7E674800E156E3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		76F733831D7D0BDE00E156E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76F7341F1D7E674800E156E3 /* QuartzCore.framework in Frameworks */,
+				76F7341B1D7D0D3800E156E3 /* AVFoundation.framework in Frameworks */,
+				76F734191D7D0D3200E156E3 /* CoreMedia.framework in Frameworks */,
+				76F734171D7D0D2400E156E3 /* CoreVideo.framework in Frameworks */,
+				76F734151D7D0D1500E156E3 /* libiconv.tbd in Frameworks */,
+				76F734091D7D0C6200E156E3 /* libzbar.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76F7339C1D7D0BDE00E156E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76F733A71D7D0BDE00E156E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		76F7337D1D7D0BDE00E156E3 = {
+			isa = PBXGroup;
+			children = (
+				76F7341E1D7E674800E156E3 /* QuartzCore.framework */,
+				76F7341A1D7D0D3800E156E3 /* AVFoundation.framework */,
+				76F734181D7D0D3200E156E3 /* CoreMedia.framework */,
+				76F734161D7D0D2400E156E3 /* CoreVideo.framework */,
+				76F734141D7D0D1500E156E3 /* libiconv.tbd */,
+				76F733881D7D0BDE00E156E3 /* WPCodeScaning */,
+				76F733A21D7D0BDE00E156E3 /* WPCodeScaningTests */,
+				76F733AD1D7D0BDE00E156E3 /* WPCodeScaningUITests */,
+				76F733871D7D0BDE00E156E3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		76F733871D7D0BDE00E156E3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				76F733861D7D0BDE00E156E3 /* WPCodeScaning.app */,
+				76F7339F1D7D0BDE00E156E3 /* WPCodeScaningTests.xctest */,
+				76F733AA1D7D0BDE00E156E3 /* WPCodeScaningUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		76F733881D7D0BDE00E156E3 /* WPCodeScaning */ = {
+			isa = PBXGroup;
+			children = (
+				76F733C31D7D0C6200E156E3 /* ZBarSDK */,
+				76F7338C1D7D0BDE00E156E3 /* AppDelegate.h */,
+				76F7338D1D7D0BDE00E156E3 /* AppDelegate.m */,
+				76F7338F1D7D0BDE00E156E3 /* ViewController.h */,
+				76F733901D7D0BDE00E156E3 /* ViewController.m */,
+				76F733921D7D0BDE00E156E3 /* Main.storyboard */,
+				76F733951D7D0BDE00E156E3 /* Assets.xcassets */,
+				76F733971D7D0BDE00E156E3 /* LaunchScreen.storyboard */,
+				76F7339A1D7D0BDE00E156E3 /* Info.plist */,
+				76F733891D7D0BDE00E156E3 /* Supporting Files */,
+			);
+			path = WPCodeScaning;
+			sourceTree = "<group>";
+		};
+		76F733891D7D0BDE00E156E3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				76F7338A1D7D0BDE00E156E3 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		76F733A21D7D0BDE00E156E3 /* WPCodeScaningTests */ = {
+			isa = PBXGroup;
+			children = (
+				76F733A31D7D0BDE00E156E3 /* WPCodeScaningTests.m */,
+				76F733A51D7D0BDE00E156E3 /* Info.plist */,
+			);
+			path = WPCodeScaningTests;
+			sourceTree = "<group>";
+		};
+		76F733AD1D7D0BDE00E156E3 /* WPCodeScaningUITests */ = {
+			isa = PBXGroup;
+			children = (
+				76F733AE1D7D0BDE00E156E3 /* WPCodeScaningUITests.m */,
+				76F733B01D7D0BDE00E156E3 /* Info.plist */,
+			);
+			path = WPCodeScaningUITests;
+			sourceTree = "<group>";
+		};
+		76F733C31D7D0C6200E156E3 /* ZBarSDK */ = {
+			isa = PBXGroup;
+			children = (
+				76F733C41D7D0C6200E156E3 /* Headers */,
+				76F733DB1D7D0C6200E156E3 /* libqrencode */,
+				76F733EC1D7D0C6200E156E3 /* libzbar.a */,
+				76F733ED1D7D0C6200E156E3 /* Resources */,
+				76F733F81D7D0C6200E156E3 /* ZBarSDK */,
+				76F733FF1D7D0C6200E156E3 /* WPZBarViewController.h */,
+				76F734001D7D0C6200E156E3 /* WPZBarViewController.mm */,
+			);
+			path = ZBarSDK;
+			sourceTree = "<group>";
+		};
+		76F733C41D7D0C6200E156E3 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				76F733C51D7D0C6200E156E3 /* ZBarSDK */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		76F733C51D7D0C6200E156E3 /* ZBarSDK */ = {
+			isa = PBXGroup;
+			children = (
+				76F733C61D7D0C6200E156E3 /* zbar */,
+				76F733D01D7D0C6200E156E3 /* zbar.h */,
+				76F733D11D7D0C6200E156E3 /* ZBarCameraSimulator.h */,
+				76F733D21D7D0C6200E156E3 /* ZBarCaptureReader.h */,
+				76F733D31D7D0C6200E156E3 /* ZBarHelpController.h */,
+				76F733D41D7D0C6200E156E3 /* ZBarImage.h */,
+				76F733D51D7D0C6200E156E3 /* ZBarImageScanner.h */,
+				76F733D61D7D0C6200E156E3 /* ZBarReaderController.h */,
+				76F733D71D7D0C6200E156E3 /* ZBarReaderView.h */,
+				76F733D81D7D0C6200E156E3 /* ZBarReaderViewController.h */,
+				76F733D91D7D0C6200E156E3 /* ZBarSDK.h */,
+				76F733DA1D7D0C6200E156E3 /* ZBarSymbol.h */,
+			);
+			path = ZBarSDK;
+			sourceTree = "<group>";
+		};
+		76F733C61D7D0C6200E156E3 /* zbar */ = {
+			isa = PBXGroup;
+			children = (
+				76F733C71D7D0C6200E156E3 /* Decoder.h */,
+				76F733C81D7D0C6200E156E3 /* Exception.h */,
+				76F733C91D7D0C6200E156E3 /* Image.h */,
+				76F733CA1D7D0C6200E156E3 /* ImageScanner.h */,
+				76F733CB1D7D0C6200E156E3 /* Processor.h */,
+				76F733CC1D7D0C6200E156E3 /* Scanner.h */,
+				76F733CD1D7D0C6200E156E3 /* Symbol.h */,
+				76F733CE1D7D0C6200E156E3 /* Video.h */,
+				76F733CF1D7D0C6200E156E3 /* Window.h */,
+			);
+			path = zbar;
+			sourceTree = "<group>";
+		};
+		76F733DB1D7D0C6200E156E3 /* libqrencode */ = {
+			isa = PBXGroup;
+			children = (
+				76F733DC1D7D0C6200E156E3 /* bitstream.c */,
+				76F733DD1D7D0C6200E156E3 /* bitstream.h */,
+				76F733DE1D7D0C6200E156E3 /* mask.c */,
+				76F733DF1D7D0C6200E156E3 /* mask.h */,
+				76F733E01D7D0C6200E156E3 /* QRCodeGenerator.h */,
+				76F733E11D7D0C6200E156E3 /* QRCodeGenerator.m */,
+				76F733E21D7D0C6200E156E3 /* qrencode.c */,
+				76F733E31D7D0C6200E156E3 /* qrencode.h */,
+				76F733E41D7D0C6200E156E3 /* qrinput.c */,
+				76F733E51D7D0C6200E156E3 /* qrinput.h */,
+				76F733E61D7D0C6200E156E3 /* qrspec.c */,
+				76F733E71D7D0C6200E156E3 /* qrspec.h */,
+				76F733E81D7D0C6200E156E3 /* rscode.c */,
+				76F733E91D7D0C6200E156E3 /* rscode.h */,
+				76F733EA1D7D0C6200E156E3 /* split.c */,
+				76F733EB1D7D0C6200E156E3 /* split.h */,
+			);
+			path = libqrencode;
+			sourceTree = "<group>";
+		};
+		76F733ED1D7D0C6200E156E3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				76F733EE1D7D0C6200E156E3 /* zbar-back.png */,
+				76F733EF1D7D0C6200E156E3 /* zbar-help.html */,
+				76F733F01D7D0C6200E156E3 /* zbar-helpicons.png */,
+				76F733F11D7D0C6200E156E3 /* zbar-samples.png */,
+				76F733F21D7D0C6200E156E3 /* ZbarImage */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		76F733F21D7D0C6200E156E3 /* ZbarImage */ = {
+			isa = PBXGroup;
+			children = (
+				76F7341C1D7E5B6800E156E3 /* scan_net@2x.png */,
+				76F733F31D7D0C6200E156E3 /* qrcode_scan_btn_flash_down@2x.png */,
+				76F733F41D7D0C6200E156E3 /* qrcode_scan_btn_flash_nor@2x.png */,
+				76F733F51D7D0C6200E156E3 /* qrcode_scan_btn_photo_down@2x.png */,
+				76F733F61D7D0C6200E156E3 /* qrcode_scan_btn_photo_nor@2x.png */,
+				76F733F71D7D0C6200E156E3 /* qrcode_scan_btn_scan_off@2x.png */,
+			);
+			path = ZbarImage;
+			sourceTree = "<group>";
+		};
+		76F733F81D7D0C6200E156E3 /* ZBarSDK */ = {
+			isa = PBXGroup;
+			children = (
+				76F733F91D7D0C6200E156E3 /* Headers */,
+				76F733FC1D7D0C6200E156E3 /* libqrencode */,
+				76F733FD1D7D0C6200E156E3 /* Resources */,
+			);
+			path = ZBarSDK;
+			sourceTree = "<group>";
+		};
+		76F733F91D7D0C6200E156E3 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				76F733FA1D7D0C6200E156E3 /* ZBarSDK */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		76F733FA1D7D0C6200E156E3 /* ZBarSDK */ = {
+			isa = PBXGroup;
+			children = (
+				76F733FB1D7D0C6200E156E3 /* zbar */,
+			);
+			path = ZBarSDK;
+			sourceTree = "<group>";
+		};
+		76F733FB1D7D0C6200E156E3 /* zbar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = zbar;
+			sourceTree = "<group>";
+		};
+		76F733FC1D7D0C6200E156E3 /* libqrencode */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = libqrencode;
+			sourceTree = "<group>";
+		};
+		76F733FD1D7D0C6200E156E3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				76F733FE1D7D0C6200E156E3 /* ZbarImage */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		76F733FE1D7D0C6200E156E3 /* ZbarImage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ZbarImage;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		76F733851D7D0BDE00E156E3 /* WPCodeScaning */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76F733B31D7D0BDE00E156E3 /* Build configuration list for PBXNativeTarget "WPCodeScaning" */;
+			buildPhases = (
+				76F733821D7D0BDE00E156E3 /* Sources */,
+				76F733831D7D0BDE00E156E3 /* Frameworks */,
+				76F733841D7D0BDE00E156E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WPCodeScaning;
+			productName = WPCodeScaning;
+			productReference = 76F733861D7D0BDE00E156E3 /* WPCodeScaning.app */;
+			productType = "com.apple.product-type.application";
+		};
+		76F7339E1D7D0BDE00E156E3 /* WPCodeScaningTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76F733B61D7D0BDE00E156E3 /* Build configuration list for PBXNativeTarget "WPCodeScaningTests" */;
+			buildPhases = (
+				76F7339B1D7D0BDE00E156E3 /* Sources */,
+				76F7339C1D7D0BDE00E156E3 /* Frameworks */,
+				76F7339D1D7D0BDE00E156E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				76F733A11D7D0BDE00E156E3 /* PBXTargetDependency */,
+			);
+			name = WPCodeScaningTests;
+			productName = WPCodeScaningTests;
+			productReference = 76F7339F1D7D0BDE00E156E3 /* WPCodeScaningTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		76F733A91D7D0BDE00E156E3 /* WPCodeScaningUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76F733B91D7D0BDE00E156E3 /* Build configuration list for PBXNativeTarget "WPCodeScaningUITests" */;
+			buildPhases = (
+				76F733A61D7D0BDE00E156E3 /* Sources */,
+				76F733A71D7D0BDE00E156E3 /* Frameworks */,
+				76F733A81D7D0BDE00E156E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				76F733AC1D7D0BDE00E156E3 /* PBXTargetDependency */,
+			);
+			name = WPCodeScaningUITests;
+			productName = WPCodeScaningUITests;
+			productReference = 76F733AA1D7D0BDE00E156E3 /* WPCodeScaningUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		76F7337E1D7D0BDE00E156E3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = wupeng;
+				TargetAttributes = {
+					76F733851D7D0BDE00E156E3 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					76F7339E1D7D0BDE00E156E3 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 76F733851D7D0BDE00E156E3;
+					};
+					76F733A91D7D0BDE00E156E3 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 76F733851D7D0BDE00E156E3;
+					};
+				};
+			};
+			buildConfigurationList = 76F733811D7D0BDE00E156E3 /* Build configuration list for PBXProject "WPCodeScaning" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 76F7337D1D7D0BDE00E156E3;
+			productRefGroup = 76F733871D7D0BDE00E156E3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				76F733851D7D0BDE00E156E3 /* WPCodeScaning */,
+				76F7339E1D7D0BDE00E156E3 /* WPCodeScaningTests */,
+				76F733A91D7D0BDE00E156E3 /* WPCodeScaningUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		76F733841D7D0BDE00E156E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76F7340F1D7D0C6200E156E3 /* qrcode_scan_btn_flash_nor@2x.png in Resources */,
+				76F733991D7D0BDE00E156E3 /* LaunchScreen.storyboard in Resources */,
+				76F7340B1D7D0C6200E156E3 /* zbar-help.html in Resources */,
+				76F734101D7D0C6200E156E3 /* qrcode_scan_btn_photo_down@2x.png in Resources */,
+				76F7340D1D7D0C6200E156E3 /* zbar-samples.png in Resources */,
+				76F734111D7D0C6200E156E3 /* qrcode_scan_btn_photo_nor@2x.png in Resources */,
+				76F7340C1D7D0C6200E156E3 /* zbar-helpicons.png in Resources */,
+				76F7340A1D7D0C6200E156E3 /* zbar-back.png in Resources */,
+				76F7340E1D7D0C6200E156E3 /* qrcode_scan_btn_flash_down@2x.png in Resources */,
+				76F733961D7D0BDE00E156E3 /* Assets.xcassets in Resources */,
+				76F733941D7D0BDE00E156E3 /* Main.storyboard in Resources */,
+				76F7341D1D7E5B6800E156E3 /* scan_net@2x.png in Resources */,
+				76F734121D7D0C6200E156E3 /* qrcode_scan_btn_scan_off@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76F7339D1D7D0BDE00E156E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76F733A81D7D0BDE00E156E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		76F733821D7D0BDE00E156E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76F734021D7D0C6200E156E3 /* mask.c in Sources */,
+				76F734061D7D0C6200E156E3 /* qrspec.c in Sources */,
+				76F733911D7D0BDE00E156E3 /* ViewController.m in Sources */,
+				76F734071D7D0C6200E156E3 /* rscode.c in Sources */,
+				76F7338E1D7D0BDE00E156E3 /* AppDelegate.m in Sources */,
+				76F7338B1D7D0BDE00E156E3 /* main.m in Sources */,
+				76F734041D7D0C6200E156E3 /* qrencode.c in Sources */,
+				76F734051D7D0C6200E156E3 /* qrinput.c in Sources */,
+				76F734081D7D0C6200E156E3 /* split.c in Sources */,
+				76F734011D7D0C6200E156E3 /* bitstream.c in Sources */,
+				76F734131D7D0C6200E156E3 /* WPZBarViewController.mm in Sources */,
+				76F734031D7D0C6200E156E3 /* QRCodeGenerator.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76F7339B1D7D0BDE00E156E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76F733A41D7D0BDE00E156E3 /* WPCodeScaningTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76F733A61D7D0BDE00E156E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76F733AF1D7D0BDE00E156E3 /* WPCodeScaningUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		76F733A11D7D0BDE00E156E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 76F733851D7D0BDE00E156E3 /* WPCodeScaning */;
+			targetProxy = 76F733A01D7D0BDE00E156E3 /* PBXContainerItemProxy */;
+		};
+		76F733AC1D7D0BDE00E156E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 76F733851D7D0BDE00E156E3 /* WPCodeScaning */;
+			targetProxy = 76F733AB1D7D0BDE00E156E3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		76F733921D7D0BDE00E156E3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				76F733931D7D0BDE00E156E3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		76F733971D7D0BDE00E156E3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				76F733981D7D0BDE00E156E3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		76F733B11D7D0BDE00E156E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		76F733B21D7D0BDE00E156E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		76F733B41D7D0BDE00E156E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = WPCodeScaning/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WPCodeScaning/ZBarSDK",
+				);
+				OTHER_LDFLAGS = "-Objc";
+				PRODUCT_BUNDLE_IDENTIFIER = wupeng.WPCodeScaning;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		76F733B51D7D0BDE00E156E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = WPCodeScaning/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WPCodeScaning/ZBarSDK",
+				);
+				OTHER_LDFLAGS = "-Objc";
+				PRODUCT_BUNDLE_IDENTIFIER = wupeng.WPCodeScaning;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		76F733B71D7D0BDE00E156E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WPCodeScaningTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wupeng.WPCodeScaningTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WPCodeScaning.app/WPCodeScaning";
+			};
+			name = Debug;
+		};
+		76F733B81D7D0BDE00E156E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WPCodeScaningTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wupeng.WPCodeScaningTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WPCodeScaning.app/WPCodeScaning";
+			};
+			name = Release;
+		};
+		76F733BA1D7D0BDE00E156E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WPCodeScaningUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wupeng.WPCodeScaningUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WPCodeScaning;
+			};
+			name = Debug;
+		};
+		76F733BB1D7D0BDE00E156E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WPCodeScaningUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wupeng.WPCodeScaningUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WPCodeScaning;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		76F733811D7D0BDE00E156E3 /* Build configuration list for PBXProject "WPCodeScaning" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76F733B11D7D0BDE00E156E3 /* Debug */,
+				76F733B21D7D0BDE00E156E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76F733B31D7D0BDE00E156E3 /* Build configuration list for PBXNativeTarget "WPCodeScaning" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76F733B41D7D0BDE00E156E3 /* Debug */,
+				76F733B51D7D0BDE00E156E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		76F733B61D7D0BDE00E156E3 /* Build configuration list for PBXNativeTarget "WPCodeScaningTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76F733B71D7D0BDE00E156E3 /* Debug */,
+				76F733B81D7D0BDE00E156E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		76F733B91D7D0BDE00E156E3 /* Build configuration list for PBXNativeTarget "WPCodeScaningUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76F733BA1D7D0BDE00E156E3 /* Debug */,
+				76F733BB1D7D0BDE00E156E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 76F7337E1D7D0BDE00E156E3 /* Project object */;
+}
